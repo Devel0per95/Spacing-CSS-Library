@@ -1,4 +1,5 @@
 /* Padding Spacing in px */
+.p-0 {padding: 0px;}
 .p-5 {padding: 5px;}
 .p-10 {padding: 10px;}
 .p-15 {padding: 15px;}
@@ -30,6 +31,7 @@
 .p-145 {padding: 145px;}
 .p-150 {padding: 150px;}
 
+.pt-0 {padding-top: 0px;}
 .pt-5 {padding-top: 5px;}
 .pt-10 {padding-top: 10px;}
 .pt-15 {padding-top: 15px;}
@@ -61,6 +63,7 @@
 .pt-145 {padding-top: 145px;}
 .pt-150 {padding-top: 150px;}
 
+.pr-0 {padding-right: 0px;}
 .pr-5 {padding-right: 5px;}
 .pr-10 {padding-right: 10px;}
 .pr-15 {padding-right: 15px;}
@@ -92,7 +95,7 @@
 .pr-145 {padding-right: 145px;}
 .pr-150 {padding-right: 150px;}
 
-
+.pb-0 {padding-bottom: 0px;}
 .pb-5 {padding-bottom: 5px;}
 .pb-10 {padding-bottom: 10px;}
 .pb-15 {padding-bottom: 15px;}
@@ -124,6 +127,7 @@
 .pb-145 {padding-bottom: 145px;}
 .pb-150 {padding-bottom: 150px;}
 
+.pl-0 {padding-left: 0px;}
 .pl-5 {padding-left: 5px;}
 .pl-10 {padding-left: 10px;}
 .pl-15 {padding-left: 15px;}
@@ -157,6 +161,7 @@
 /* End Padding Spacing in px */
 
 /* Margin Spacing in px */
+.m-0 {margin: 0px;}
 .m-5 {margin: 5px;}
 .m-10 {margin: 10px;}
 .m-15 {margin: 15px;}
@@ -188,6 +193,7 @@
 .m-145 {margin: 145px;}
 .m-150 {margin: 150px;}
 
+.mt-0 {margin-top: 0px}
 .mt-5 {margin-top: 5px;}
 .mt-10 {margin-top: 10px;}
 .mt-15 {margin-top: 15px;}
@@ -219,6 +225,7 @@
 .mt-145 {margin-top: 145px;}
 .mt-150 {margin-top: 150px;}
 
+.mr-0 {margin-right: 0px;}
 .mr-5 {margin-right: 5px;}
 .mr-10 {margin-right: 10px;}
 .mr-15 {margin-right: 15px;}
@@ -250,6 +257,7 @@
 .mr-145 {margin-right: 145px;}
 .mr-150 {margin-right: 150px;}
 
+.mb-0 {margin-bottom: 0px;}
 .mb-5 {margin-bottom: 5px;}
 .mb-10 {margin-bottom: 10px;}
 .mb-15 {margin-bottom: 15px;}
@@ -281,6 +289,7 @@
 .mb-145 {margin-bottom: 145px;}
 .mb-150 {margin-bottom: 150px;}
 
+.ml-0 {margin-left: 0px;}
 .ml-5 {margin-left: 5px;}
 .ml-10 {margin-left: 10px;}
 .ml-15 {margin-left: 15px;}
