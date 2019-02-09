@@ -1,0 +1,92 @@
+/*
+    *Sliding Menu (2019)
+    --! MIT License !--
+    -- Made By Khaled Mneimneh --
+    Github Link https://github.com/Devel0per95/Useful-CSS-Library
+
+
+    =======================
+    Required Libraries:
+    =======================
+    - JQuery
+    - Bootstrap
+    - fontawesome
+    =======================
+*/
+
+.sliding-menu {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    scroll-behavior: auto;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    flex: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.sliding-menu .trigger .close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    color: #37474f;
+    border: 1px solid #37474f;
+    padding: 5px 10px;
+    border-radius: 1em;
+    transition: .5s;
+}
+.sliding-menu .trigger .close:hover {
+    color: #fff;
+    background-color: #37474f;
+}
+.sliding-menu .menu-title h3 {padding: 15px 0;}
+.sliding-menu .menu-title h3::after {
+    content: "";
+    border-bottom: 2px solid #f44336;
+    width: 80px;
+    padding: 10px;
+    position: absolute;
+    left: 17px;
+    bottom: 15px;
+}
+.menu-items{
+    width: 100%;
+    padding: 80px 0;
+}
+.sliding-menu .menu-list ul{
+    list-style: none;
+    padding: 0;
+}
+.sliding-menu .menu-items ul li{
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-weight: bold;
+    color: #37474f;
+    border-bottom: 1px solid rgba(55, 71, 79, 0.20);
+    text-align: center;
+    transition: .5s;
+}
+.sliding-menu .menu-items ul li:hover {
+    background-color: #37474f;
+    color: #fff; 
+}
+.sliding-menu .menu-items ul li a{
+    color: #37474f;
+    text-decoration: none;
+}
+.sliding-menu .menu-items ul li:hover a {color: #fff; }
+.sliding-menu .menu-items ul li a:hover {color: #fff; }
+.sliding-menu .menu-items ul li:nth-child(1){
+    border-top: 1px solid rgba(55, 71, 79, 0.20);
+}
+
+/* Responsive Styling */
+@media (max-width: 1023px){
+    .sliding-menu .menu-items ul:nth-child(1){margin: 0;}
+    .sliding-menu .menu-items ul:nth-child(1) li:last-child{border-bottom: 0;}
+    .sliding-menu .trigger .close{z-index: 2;}
+}
