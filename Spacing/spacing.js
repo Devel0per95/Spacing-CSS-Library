@@ -1,5 +1,5 @@
 /*
-    *Spacing.js v1 (2019)
+    *Spacing.js v1.2 (2019)
     --! MIT License !--
     -- Made By Khaled Mneimneh --
     Github Link https://github.com/Devel0per95/Useful-CSS-Library
@@ -8,7 +8,8 @@
 */
 
 // Useful Vars
-const dataSpacing = $("[ds]")
+const dataAttr = "[m], [mt], [mr], [mb], [ml], [my], [mx], [p], [pt], [pr], [pb], [pl], [py], [px]"
+const dataSpacing = $("[ds]").find(dataAttr)
 const p = "px"
 
 // Margin
