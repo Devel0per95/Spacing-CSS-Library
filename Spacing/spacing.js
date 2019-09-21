@@ -1,5 +1,5 @@
 /*
-    *Spacing.js v1.2 (2019)
+    *Spacing.js v1.3 (2019)
     --! MIT License !--
     -- Made By Khaled Mneimneh --
     Github Link https://github.com/Devel0per95/Useful-CSS-Library
@@ -8,29 +8,29 @@
 */
 
 // Useful Vars
-const dataAttr = "[m], [mt], [mr], [mb], [ml], [my], [mx], [p], [pt], [pr], [pb], [pl], [py], [px]"
-const dataSpacing = $("[ds]").find(dataAttr)
-const p = "px"
+let dataAttr = "[data-m], [data-mt], [data-mr], [data-mb], [data-ml], [data-my], [data-mx], [data-p], [data-pt], [data-pr], [data-pb], [data-pl], [data-py], [data-px]";
+let dataSpacing = $("[data-spacing]").find(dataAttr);
+let p = "px";
 
 // Margin
 const marginSpacing = () => {
   dataSpacing.each(function () {
     $(this).css({
-      'margin': $(this).attr("m") + p,
-      'margin-top': $(this).attr("mt") + p,
-      'margin-right': $(this).attr("mr") + p,
-      'margin-bottom': $(this).attr("mb") + p,
-      'margin-left': $(this).attr("ml") + p,
+      'margin': $(this).attr("data-m") + p,
+      'margin-top': $(this).attr("data-mt") + p,
+      'margin-right': $(this).attr("data-mr") + p,
+      'margin-bottom': $(this).attr("data-mb") + p,
+      'margin-left': $(this).attr("data-ml") + p,
     });
   });
 };
 const marginSpacingDouble = () => {
   dataSpacing.each(function () {
     $(this).css({
-      'margin-top': $(this).attr("my") + p,
-      'margin-bottom': $(this).attr("my") + p,
-      'margin-right': $(this).attr("mx") + p,
-      'margin-left': $(this).attr("mx") + p,
+      'margin-top': $(this).attr("data-my") + p,
+      'margin-bottom': $(this).attr("data-my") + p,
+      'margin-right': $(this).attr("data-mx") + p,
+      'margin-left': $(this).attr("data-mx") + p,
     });
   });
 };
@@ -39,21 +39,21 @@ const marginSpacingDouble = () => {
 const paddingSpacing = () => {
   dataSpacing.each(function () {
     $(this).css({
-      'padding': $(this).attr("p") + p,
-      'padding-top': $(this).attr("pt") + p,
-      'padding-right': $(this).attr("pr") + p,
-      'padding-bottom': $(this).attr("pb") + p,
-      'padding-left': $(this).attr("pl") + p,
+      'padding': $(this).attr("data-p") + p,
+      'padding-top': $(this).attr("data-pt") + p,
+      'padding-right': $(this).attr("data-pr") + p,
+      'padding-bottom': $(this).attr("data-pb") + p,
+      'padding-left': $(this).attr("data-pl") + p,
     });
   });
 };
 const paddingSpacingDouble = () => {
   dataSpacing.each(function () {
     $(this).css({
-      'padding-top': $(this).attr("py") + p,
-      'padding-bottom': $(this).attr("py") + p,
-      'padding-right': $(this).attr("px") + p,
-      'padding-left': $(this).attr("px") + p,
+      'padding-top': $(this).attr("data-py") + p,
+      'padding-bottom': $(this).attr("data-py") + p,
+      'padding-right': $(this).attr("data-px") + p,
+      'padding-left': $(this).attr("data-px") + p,
     });
   });
 };
