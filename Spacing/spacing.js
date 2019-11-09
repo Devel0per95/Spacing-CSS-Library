@@ -4,6 +4,7 @@
     -- Made By Khaled Mneimneh --
     Github Link https://github.com/Devel0per95/Useful-CSS-Library
 */
+let autoTrigger = document.body.setAttribute("data-spacing", "");
 let dataAttr = "[data-m], [data-mt], [data-mr], [data-mb], [data-ml], [data-my], [data-mx], [data-p], [data-pt], [data-pr], [data-pb], [data-pl], [data-py], [data-px]";
 let dataSpacing = [...document.querySelectorAll('[data-spacing]')].map(el => el.querySelectorAll(dataAttr));
 let p = "px";
