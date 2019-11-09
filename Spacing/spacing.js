@@ -1,65 +1,38 @@
 /*
-    *Spacing.js v1.3 (2019)
+    *Spacing.js v1.5 (2019)
     --! MIT License !--
     -- Made By Khaled Mneimneh --
     Github Link https://github.com/Devel0per95/Useful-CSS-Library
-
-    !!JQuery Required
 */
-
-// Useful Vars
+let add = document.body.setAttribute("data-spacing", "");
 let dataAttr = "[data-m], [data-mt], [data-mr], [data-mb], [data-ml], [data-my], [data-mx], [data-p], [data-pt], [data-pr], [data-pb], [data-pl], [data-py], [data-px]";
-let dataSpacing = $("[data-spacing]").find(dataAttr);
+let dataSpacing = [...document.querySelectorAll('[data-spacing]')].map(el => el.querySelectorAll(dataAttr));
 let p = "px";
 
-// Margin
-const marginSpacing = () => {
-  dataSpacing.each(function () {
-    $(this).css({
-      'margin': $(this).attr("data-m") + p,
-      'margin-top': $(this).attr("data-mt") + p,
-      'margin-right': $(this).attr("data-mr") + p,
-      'margin-bottom': $(this).attr("data-mb") + p,
-      'margin-left': $(this).attr("data-ml") + p,
-    });
-  });
-};
-const marginSpacingDouble = () => {
-  dataSpacing.each(function () {
-    $(this).css({
-      'margin-top': $(this).attr("data-my") + p,
-      'margin-bottom': $(this).attr("data-my") + p,
-      'margin-right': $(this).attr("data-mx") + p,
-      'margin-left': $(this).attr("data-mx") + p,
-    });
-  });
-};
-
-// Padding
-const paddingSpacing = () => {
-  dataSpacing.each(function () {
-    $(this).css({
-      'padding': $(this).attr("data-p") + p,
-      'padding-top': $(this).attr("data-pt") + p,
-      'padding-right': $(this).attr("data-pr") + p,
-      'padding-bottom': $(this).attr("data-pb") + p,
-      'padding-left': $(this).attr("data-pl") + p,
-    });
-  });
-};
-const paddingSpacingDouble = () => {
-  dataSpacing.each(function () {
-    $(this).css({
-      'padding-top': $(this).attr("data-py") + p,
-      'padding-bottom': $(this).attr("data-py") + p,
-      'padding-right': $(this).attr("data-px") + p,
-      'padding-left': $(this).attr("data-px") + p,
-    });
-  });
+const elemntsSpacing = () => {
+  dataSpacing.forEach(dataSpacingDataEls => {
+    dataSpacingDataEls.forEach(getEl => {
+      getEl.style.margin = getEl.getAttribute('data-m') + p;
+      getEl.style.marginTop = getEl.getAttribute('data-mt') + p;
+      getEl.style.marginRight = getEl.getAttribute('data-mr') + p;
+      getEl.style.marginBottom = getEl.getAttribute('data-mb') + p;
+      getEl.style.marginLeft = getEl.getAttribute('data-ml') + p;
+      getEl.style.marginTop = getEl.getAttribute('data-my') + p;
+      getEl.style.marginBottom = getEl.getAttribute('data-my') + p;
+      getEl.style.marginRight = getEl.getAttribute('data-mx') + p;
+      getEl.style.marginLeft = getEl.getAttribute('data-mx') + p;
+      getEl.style.padding = getEl.getAttribute('data-p') + p;
+      getEl.style.paddingTop = getEl.getAttribute('data-pt') + p;
+      getEl.style.paddingRight = getEl.getAttribute('data-pr') + p;
+      getEl.style.paddingBottom = getEl.getAttribute('data-pb') + p;
+      getEl.style.paddingLeft = getEl.getAttribute('data-pl') + p;
+      getEl.style.paddingTop = getEl.getAttribute('data-py') + p;
+      getEl.style.paddingBottom = getEl.getAttribute('data-py') + p;
+      getEl.style.paddingRight = getEl.getAttribute('data-px') + p;
+      getEl.style.paddingLeft = getEl.getAttribute('data-px') + p;
+    })
+  })
 };
 
 // Function Calling 📱
-marginSpacing()
-paddingSpacing();
-marginSpacingDouble();
-paddingSpacingDouble();
+elemntsSpacing();
